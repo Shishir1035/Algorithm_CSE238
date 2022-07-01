@@ -5,7 +5,7 @@ public class MergeSort{
     static int n;
     static void Merge(int[] num,int st, int mid, int en) {
 
-        int copy[] = new int[1000];
+        int copy[] = new int[100000];
         for (int i = 0; i < n; i++) {
             copy[i] = num[i];
         }
@@ -41,7 +41,7 @@ public class MergeSort{
     }
 
     public static void main(String[] args) {
-        int num[] = new int[1000];
+        int num[] = new int[100000];
         Scanner input = new Scanner(System.in);
         n = input.nextInt();
         for(int i=0; i<n; i++){

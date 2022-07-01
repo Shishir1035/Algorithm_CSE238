@@ -33,7 +33,7 @@ public class QuickSort{
 
 
     public static void main(String[] args) {
-    int num[] = new int[1000];
+    int num[] = new int[100000];
     Scanner input = new Scanner(System.in);
     n = input.nextInt();
 
