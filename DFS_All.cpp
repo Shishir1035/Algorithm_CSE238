@@ -18,7 +18,7 @@ int parent[1000]; 		//path print back tracking
 
 void DFS(int st,int par)
 {
-	// vis[st] = true;	
+	vis[st] = true;	
 	discover.pb(st);
 	parent[st] = par;
 	for (int x : graph[st])
