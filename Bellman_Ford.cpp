@@ -63,7 +63,7 @@ int main()
 	}
 
 	for (int i = 0; i < node; ++i)
-		dist[i] = INT_MAX;
+		dist[i] = INT_MAX;2
 
 	int st;
 	cin>>st;
