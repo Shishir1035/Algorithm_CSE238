@@ -55,21 +55,16 @@ void prims(int start)
 		if(!vis[u])
 		{
 			for (auto [e,w] : graph[u])
-			{
 				mincost_edge.push({w, {u,e}});
-			}
 			vis[u] = true;
 		}
 
 		if(!vis[v])
 		{
 			for (auto [e,w] : graph[v])
-			{
 				mincost_edge.push({w, {v,e}});
-			}
 			vis[v] = true;
 		}
-
 	}
 }
 
