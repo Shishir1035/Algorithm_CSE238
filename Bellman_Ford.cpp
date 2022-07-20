@@ -71,3 +71,16 @@ int main()
 	printvec(dist, node);
 	printvec(par, node);
 }    
+
+/**
+4 5
+0 1 10
+1 2 10
+0 2 100
+2 0 -10
+1 2 -11
+
+Negative Cycle Exists
+-11 -1 -12 30000
+2 0 1 0
+*/
