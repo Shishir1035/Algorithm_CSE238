@@ -63,11 +63,11 @@ int main()
 	}
 
 	for (int i = 0; i < node; ++i)
-		dist[i] = 30000;
+		dist[i] = INT_MAX;
 
-	// int st;
-	// cin>>st;
-	Bellman(0,edges);
+	int st;
+	cin>>st;
+	Bellman(st,edges);
 	printvec(dist, node);
 	printvec(par, node);
 }    
@@ -78,9 +78,11 @@ int main()
 1 2 10
 0 2 100
 2 0 -10
-1 2 -11
+1 2 1
+0
 
-Negative Cycle Exists
--11 -1 -12 30000
-2 0 1 0
+Bellman Ford Successfully ran!
+0 10 11 2147483647
+-1 0 1 0
+
 */
